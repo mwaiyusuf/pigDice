@@ -1,13 +1,15 @@
 var total=0
 var values=[];
 
-//function roll1() {
-// values.push(document.getElementById('die1').innerHTML= parseInt(Math.random()*6+1));
-// alert(values)
-//}
-//
+function roll() {
+    alert("hi");
+ values.push(document.getElementById('pl1').innerHTML= parseInt(Math.random()*6+1));
+ alert(values)
+}
+
 //$(document).ready(function(){
 // $("#rol").click(function(){
+//     
 //   var nax=0;
 //   for(z=0;z<values.length;z++){
 //     if(values[z]!=1){
@@ -28,5 +30,5 @@ var values=[];
 //
 //
 //function roll2() {
-// document.getElementById('die2').innerHTML= parseInt(Math.random()*6+1);
+// document.getElementById('pl2').innerHTML= parseInt(Math.random()*6+1);
 //}

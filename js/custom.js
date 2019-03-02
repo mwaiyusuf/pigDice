@@ -11,16 +11,17 @@ $(document).ready(function(){
  $("#hold").click(function(){
      alert("hi");
    var nax=0;
-   for(z=0;z<values.length;z++){
-     if(values[z]!=1){
-        nax=nax+values[z];
+   for(i=0;i<values.length;i++){
+     if(values[i]!==1){
+        nax=nax+values[i];
      }
      else {
-       values.length=0;
+//       values.length=0;
+         values=0;
      }
 
    }
-   alert(nax)
+   alert(nax);
  })
 
 })

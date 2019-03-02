@@ -1,5 +1,6 @@
-var total=0
+var totalValues[];
 var values=[];
+var summation=[];
  
 function roll() {
    

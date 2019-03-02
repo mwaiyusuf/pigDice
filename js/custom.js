@@ -39,7 +39,7 @@ var sum=[];
 var currentScore=0;
 function roll() {
     var rollDice=document.getElementById('pl1').innerHTML=parseInt(Math.random()*6+1);
-     
+    var diceRoll=document.getElementById('pl2').innerHTML=parseInt(Math.random()*6+1);
     if(rollDice!=1){
         currentScore+=rollDice;
         alert("the current score is" + currentScore);
@@ -48,5 +48,23 @@ function roll() {
     else{
      currentScore=0;
     }
+     if(diceRoll!=1){
+        currentScore+=diceRoll;
+        alert("the current score is" + currentScore);
+        
+    }
+    else{
+     currentScore=0;
+    }
     
 };
+$(document).ready(function(){
+    $("#hold").click(function(){
+        sum.push(currentScore);
+        alert(sum);
+        $("#bod").hide();
+         $("#bos").show();
+    });
+    
+});
+ 

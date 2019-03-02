@@ -14,10 +14,52 @@
 <!--font awesome css-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <title>Hello, world!</title>
+    <title>Pig Dice</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">pigDice</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">News</a>
+      <a class="nav-item nav-link" href="#">Help</a>
+    </div>
+  </div>
+</nav>
+      <div class="conatiner">
+         <div class="pdice">
+          <h1>PIG DICE</h1>
+             <p>Welcome to the pig Dice</p>
+          </div> 
+           <button id="reset" type="button" class="btn btn-outline-info">restart</button>
+          <div class="row">
+             
+            <div class="col-md-4" id="bod">
+              <h3>Player one </h3>
+                <p id="pl1"></p>
+              </div>
+               <div class="col-md-4" id="bod">
+    
+              <button  type="button" class="btn btn-outline-success" onclick="roll()">roll</button>
+                <button  type="button" class="btn btn-outline-warning">hold!</button>
+              </div>
+               <div class="col-md-4" id="bod">
+              <h3>Player two </h3>
+                   <p id="pl2"></p>
+              </div>
+          </div>
+      
+      
+      
+      
+      
+      
+      
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS --> 

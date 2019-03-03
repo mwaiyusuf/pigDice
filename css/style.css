@@ -1,6 +1,10 @@
 body{
     background-color: #ff80ab 
 }
+.pdice{
+text-align: center;
+    background-color: #e0e0e0;
+}
 #bod{
     border: 2px solid black;
     border-radius: 40px;

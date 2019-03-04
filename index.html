@@ -17,37 +17,37 @@
     <title>Pig Dice</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">pigDice</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a  style="color: white;" class="navbar-brand" href="#">pigDice</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="http://www.dice.se/about/">About</a>
-      <a class="nav-item nav-link" href="https://forum.allaboutcircuits.com/threads/digital-dice-game-help.115761/">Help</a>
+      <a style="color: white;" id="hom" class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a style="color: white;"  class="nav-item nav-link" href="http://www.dice.se/about/">About</a>
+      <a style="color: white;" class="nav-item nav-link" href="https://forum.allaboutcircuits.com/threads/digital-dice-game-help.115761/">Help</a>
     </div>
   </div>
 </nav>
       <div class="container">
         <div class="winner">
          <div class="pdice">
-          <h1>PIG DICE GAME</h1>
-             <p>Welcome to the pig Dice</p>
+          <h1 class="gm">PIG DICE GAME</h1>
+             <p class="gm">Welcome to the pig Dice</p>
              <h1>DICE RULES</h1>
              <ol>
                <li>As a user,i want to roll the dice when its my turn to play in the game</li>
-                <li>As a user,i want to see the score i get for each roll of the dice i make in the game</li>
-                 <li>As a user, i want to see my cumulative score for each round i play in the game.For example,if i roll the score 2-6-3 consecutively,i should see my end score as 11</li>
-                  <li>As a user,i want the option to hold my score when i am satisfied with the points i have gained in a round of playing.The game should,therefore,add my held score to my host recent cumulative score.</li>
-                   <li>As a user,i want to be inserted when the dice rolls on number 1.This will help me know that i cant roll the dice untill the alternate the player yakes their round</li>
-                    <li>As a user,i need a way to know which player has won the game,which means they have scored 100 points before the alternate player</li>
+               <li>As a user,i want to see the score i get for each roll of the dice i make in the game</li>
+               <li>As a user, i want to see my cumulative score for each round i play in the game.For example,if i roll the score 2-6-3 consecutively,i should see my end score as 11</li>
+               <li>As a user,i want the option to hold my score when i am satisfied with the points i have gained in a round of playing.The game should,therefore,add my held score to my host recent cumulative score.</li>
+               <li>As a user,i want to be inserted when the dice rolls on number 1.This will help me know that i cant roll the dice untill the alternate the player yakes their round</li>
+               <li>As a user,i need a way to know which player has won the game,which means they have scored 100 points before the alternate player</li>
              </ol>
              <div class="row">
-                 <div class="col-md-6">
-               <h4>player1:</h4>
-                     <input id="name1" type="text" name="name" value="" placeholder="Enter your name.."></div>
+                 <div  class="col-md-6">
+               <h4 id="name1">player1:</h4>
+                     <input  id="name1" type="text" name="name" value="" placeholder="Enter your name.."></div>
                  <div class="col-md-6">
                <h4>player2</h4>
                      <input id="name2" type="text" name="name" value="" placeholder="Enter your name.."></div></div>
@@ -93,7 +93,7 @@
 </div>
 
       </div>
- <p class="copyright">Copyright© 2018</p>
+ <p class="copyright">Copyright© 2019</p>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="js/jquery-3.3.1.js"></script>

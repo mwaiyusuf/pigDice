@@ -2,14 +2,31 @@ body{
     background-color: #ff80ab
 }
 .pdice{
-text-align: center;
     background-color: #e0e0e0;
+}
+nav:hover{
+  text-decoration: underline;
+}
+.gm{
+  text-align: center;
+}
+#hom{
+  margin-left: 530px;
+}
+#start{
+  margin-left: 360px;
+}
+#name1{
+  margin-left: 50px;
 }
 #bod{
     border: 2px solid black;
     border-radius: 40px;
     padding: 30px;
     text-align: center;
+}
+.copyright{
+  margin-left: 620px;
 }
 #bos{
  border: 2px solid black;
@@ -28,4 +45,4 @@ text-align: center;
 }
 #reset{
 
-margin-left: 650px;}
+margin-left: 540px;}

@@ -1,9 +1,12 @@
+
+
+
 //var totalValues[];
 //var values=[];
 //var summation=[];
-// 
+//
 //function roll() {
-//   
+//
 // values.push(document.getElementById('pl1').innerHTML= parseInt(Math.random()*6+1));
 // alert(values)
 //}
@@ -34,37 +37,68 @@
 //function roll2() {
 // document.getElementById('pl2').innerHTML= parseInt(Math.random()*6+1);
 //}
-var totalSum=[];
-var sum=[];
-var currentScore=0;
-function roll() {
-    var rollDice=document.getElementById('pl1').innerHTML=parseInt(Math.random()*6+1);
-    var diceRoll=document.getElementById('pl2').innerHTML=parseInt(Math.random()*6+1);
-    if(rollDice!=1){
-        currentScore+=rollDice;
-        alert("the current score is" + currentScore);
-        
+
+$("#start").click(function(){
+  $(".pdice").hide();
+  $(".game").show();
+
+  var nameInput1 =$("input#name1").val();
+  var nameInput2 =$("input#name2").val();
+  $("#plyr1").text(nameInput1);
+  $("#plyr2").text(nameInput2);
+})
+var totalSum1=[];
+var sum1=[];
+var currentScore1=0;
+var totalSum2=[];
+var sum2=[];
+var currentScore2=0;
+
+function roll1() {
+    var rollDice1=document.getElementById('pl1').innerHTML=parseInt(Math.random()*6+1);
+    if(rollDice1!=1){
+        currentScore1+=rollDice1;
+        alert("the current score is" + currentScore1);
     }
     else{
-     currentScore=0;
+     currentScore1=0;
+     $(".bt1").hide();
+      $(".bt2").show();
     }
-     if(diceRoll!=1){
-        currentScore+=diceRoll;
-        alert("the current score is" + currentScore);
-        
-    }
-    else{
-     currentScore=0;
-    }
-    
+
 };
 $(document).ready(function(){
-    $("#hold").click(function(){
-        sum.push(currentScore);
-        alert(sum);
-        $("#bod").hide();
-         $("#bos").show();
+    $("#hold1").click(function(){
+        sum1.push(currentScore1);
+        alert(sum1);
+        $(".bt1").hide();
+         $(".bt2").show();
+         if (totalSum1>=100) {
+           alert("you are the winner");
+           $(".winner").hide();
+           $(".congrats").show();
+         }
     });
-    
+
 });
- 
+function roll2() {
+    var rollDice2=document.getElementById('pl2').innerHTML=parseInt(Math.random()*6+1);
+    if(rollDice2!=1){
+        currentScore2+=rollDice2;
+        alert("the current score is" + currentScore2);
+
+    }
+    else{
+     currentScore2=0;
+    }
+
+};
+$(document).ready(function(){
+    $("#hold2").click(function(){
+        sum2.push(currentScore2);
+        alert(sum2);
+        $(".bt2").hide();
+         $(".bt1").show();
+    });
+
+});

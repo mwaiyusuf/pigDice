@@ -1,5 +1,5 @@
 body{
-    background-color: #ff80ab 
+    background-color: #ff80ab
 }
 .pdice{
 text-align: center;
@@ -16,10 +16,15 @@ text-align: center;
     border-radius: 40px;
     padding: 30px;
     text-align: center;
-
-
-
-
+}
+.bt2{
+    display: none;
+}
+.game{
+  display: none;
+}
+.congrats{
+  display: none;
 }
 #reset{
 

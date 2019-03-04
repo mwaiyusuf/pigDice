@@ -16,7 +16,7 @@
 
     <title>Pig Dice</title>
   </head>
-  <body> 
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">pigDice</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,46 +30,60 @@
     </div>
   </div>
 </nav>
-      <div class="conatiner">
+      <div class="container">
+        <div class="winner">
          <div class="pdice">
           <h1>PIG DICE GAME</h1>
              <p>Welcome to the pig Dice</p>
              <div class="row">
                  <div class="col-md-6">
                <h4>player1:</h4>
-                     <input id="name" type="text" name="name" value="" placeholder="Enter your name.."></div>
+                     <input id="name1" type="text" name="name" value="" placeholder="Enter your name.."></div>
                  <div class="col-md-6">
-               <h4>player2:</h4>
-                     <input id="name" type="text" name="name" value="" placeholder="Enter your name.."></div></div>
-             <button type="button" class="btn btn-outline-success">START</button>
+               <h4>player2</h4>
+                     <input id="name2" type="text" name="name" value="" placeholder="Enter your name.."></div></div>
+             <button id="start" type="button" class="btn btn-outline-success">START</button>
           </div>
+          <div class="game">
            <button id="reset" type="reset" value="reset" class="btn btn-outline-info">restart</button>
           <div class="row">
 
             <div class="col-md-4" id="bod">
-              <h3>Player one </h3>
+              <h3>Player one:- </h3>
+                <p id="plyr1"></p>
                 <p id="pl1"></p>
                 <p id="totalSum"></p>
               </div>
                <div class="col-md-4" id="bod">
-
-              <button  type="button" class="btn btn-outline-success" onclick="roll()">roll</button>
-                <button id="hold" type="button" class="btn btn-outline-warning">hold!</button>
+           <div class=".img"></div>
+                   <div class="bt1">
+              <button  type="button" class="btn btn-outline-success" onclick="roll1()">roll1</button>
+                <button id="hold1" type="button" class="btn btn-outline-warning">hold1</button>
+                   </div>
+                      <div class="bt2">
+              <button  type="button" class="btn btn-outline-success" onclick="roll2()">roll2</button>
+                <button id="hold2" type="button" class="btn btn-outline-warning">hold2</button>
+                   </div>
               </div>
                <div class="col-md-4" id="bos">
-              <h3>Player two </h3>
+              <h3>Player two:-</h3>
+                   <p id="plyr2"></p>
                    <p id="pl2"></p>
               </div>
           </div>
 
+</div>
 
 
 
-
-
+</div>
+<div class="congrats">
+  <h1>BIG UP!</h1>
+  <p>You are the winner</p>
+</div>
 
       </div>
-
+ <p class="copyright">Copyright© 2018</p>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="js/jquery-3.3.1.js"></script>

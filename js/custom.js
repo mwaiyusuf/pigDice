@@ -47,7 +47,7 @@ $("#start").click(function(){
   $("#plyr1").text(nameInput1);
   $("#plyr2").text(nameInput2);
 })
-var totalSum1=[];
+var totalSum1=0;
 var sum1=[];
 var currentScore1=0;
 var totalSum2=[];
@@ -55,13 +55,15 @@ var sum2=[];
 var currentScore2=0;
 
 function roll1() {
-    var rollDice1=document.getElementById('pl1').innerHTML=parseInt(Math.random()*6+1);
+    var rollDice1=parseInt(Math.floor((Math.random()*6+1)));
+    document.getElementById('pl1').innerHTML=rollDice1;
     if(rollDice1!=1){
         currentScore1+=rollDice1;
         alert("the current score is" + currentScore1);
     }
     else{
      currentScore1=0;
+     sum1=[];
      $(".bt1").hide();
       $(".bt2").show();
     }
@@ -73,6 +75,13 @@ $(document).ready(function(){
         alert(sum1);
         $(".bt1").hide();
          $(".bt2").show();
+         sum1.forEach(function(sum) {
+           totalSum1 += (sum);
+         });
+
+         alert(totalSum1);
+         currentScore1=0;
+          sum1=[];
          if (totalSum1>=100) {
            alert("you are the winner");
            $(".winner").hide();
@@ -81,8 +90,9 @@ $(document).ready(function(){
     });
 
 });
+
 function roll2() {
-    var rollDice2=document.getElementById('pl2').innerHTML=parseInt(Math.random()*6+1);
+    var rollDice2=document.getElementById('pl2').innerHTML=parseInt(Math.floor((Math.random()*6+1)));
     if(rollDice2!=1){
         currentScore2+=rollDice2;
         alert("the current score is" + currentScore2);
@@ -90,6 +100,9 @@ function roll2() {
     }
     else{
      currentScore2=0;
+        sum2=[];
+        $(".bt2").hide();
+         $(".bt1").show();
     }
 
 };
@@ -99,6 +112,18 @@ $(document).ready(function(){
         alert(sum2);
         $(".bt2").hide();
          $(".bt1").show();
+         sum2.forEach(function(sum) {
+           return totalSum2 += sum;
+         });
+
+         alert(totalSum2);
+         currentScore2=0;
+          sum2=[];
+         if (totalSum2>=100) {
+           alert("you are the winner");
+           $(".winner").hide();
+           $(".congrats").show();
+         }
     });
 
 });

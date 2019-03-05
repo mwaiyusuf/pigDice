@@ -23,7 +23,7 @@ No errors at the moment.incase you encounter other bugs please reach out via the
 ## Libraries
 jQuery
 Bootsrap
-###Demo
+### Demo
  * To get access to a live demo click this link  https://mwaiyusuf.github.io
 
 ### License

@@ -1,14 +1,18 @@
 // if(nameInput1=="" || nameInput2==""){
 //    $("#start").Toggle(10ms,1)
 // }
+
 $("#start").click(function(){
 
   $(".pdice").hide();
   $(".game").show();
 
-  var nameInput1 =$("input#name1").val();
-  var nameInput2 =$("input#name2").val();
+   nameInput1 =$("input#name1").val();
+   nameInput2 =$("input#name2").val();
 
+   // if ($("#name1").val() === "" || $("#name2").val() === "") {
+   //             alert("Please fill in your names to continue!");
+   //           }
   $("#plyr1").text(nameInput1);
   $("#plyr2").text(nameInput2);
 
@@ -86,7 +90,7 @@ $(document).ready(function(){
          currentScore1=0;
           sum1=[];
          if (totalSum1>=100) {
-           alert("you are the winner");
+           alert("PLayer 1:-you are the winner" );
 
            $(".winner").hide();
 
@@ -153,7 +157,7 @@ $(document).ready(function(){
          currentScore2=0;
           sum2=[];
          if (totalSum2>=100) {
-           alert("you are the winner");
+           alert("player2 :-you are the winner");
               // document.getElementById('winn').append(nameInput2);
 
               //  alert("hi")

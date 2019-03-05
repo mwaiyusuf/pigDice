@@ -3,19 +3,21 @@
 // }
 
 $("#start").click(function(){
-
+  if ($("#name1") == "" || $("#name2").val() == "") {
+              alert("Please fill in your names to continue!");
+              location.reload();
+            }
+            else{
   $(".pdice").hide();
   $(".game").show();
 
    nameInput1 =$("input#name1").val();
    nameInput2 =$("input#name2").val();
 
-   // if ($("#name1").val() === "" || $("#name2").val() === "") {
-   //             alert("Please fill in your names to continue!");
-   //           }
+
   $("#plyr1").text(nameInput1);
   $("#plyr2").text(nameInput2);
-
+}
 })
 var totalSum1=0;
 var sum1=[];
@@ -61,17 +63,17 @@ function roll1() {
     }
 
 };
-$("#restart").click(function(){
-  var totalSum1=0;
-  var sum1=[];
-  var currentScore1=0;
-  var totalSum2=0;
-  var sum2=[];
-  var currentScore2=0;
-    $("#bos").css({opacity: "0.2"});
-
-
-})
+// $("#restart").click(function(){
+//   var totalSum1=0;
+//   var sum1=[];
+//   var currentScore1=0;
+//   var totalSum2=0;
+//   var sum2=[];
+//   var currentScore2=0;
+//     $("#bos").css({opacity: "0.2"});
+//
+//
+// })
 $(document).ready(function(){
     $("#hold1").click(function(){
         sum1.push(currentScore1);
@@ -102,6 +104,16 @@ $(document).ready(function(){
     });
 
 });
+function reload(){
+  // return totalSum1=0;
+  // return sum1=0;
+  // return currentScore1=0;
+  // return totalSum2=0;
+  // return sum2=0;
+  // return currentScore2=0;
+  //   $("#bos").css({opacity: "0.2"});
+  location.reload();
+}
 
 function roll2() {
     var rollDice2=document.getElementById('pl2').innerHTML=parseInt(Math.floor((Math.random()*6+1)));

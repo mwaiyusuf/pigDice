@@ -10,7 +10,7 @@
 <!--custom css -->
       <link rel="stylesheet" href="css/style.css">
 <!--animate(1).css-->
-    <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/animate(1).css">
 <!--font awesome css-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
@@ -40,16 +40,16 @@
       <div class="container">
         <div class="winner">
          <div class="pdice">
-          <h1 class="gm">PIG DICE GAME</h1>
+          <h1 class="gm" class="animated infinite flipOutX">PIG DICE GAME</h1>
              <p class="gm">Welcome to the pig Dice</p>
-             <h1>DICE RULES</h1>
+             <h1>DICE RULES:-</h1>
              <ol>
-               <li>As a user,i want to roll the dice when its my turn to play in the game</li>
-               <li>As a user,i want to see the score i get for each roll of the dice i make in the game</li>
-               <li>As a user, i want to see my cumulative score for each round i play in the game.For example,if i roll the score 2-6-3 consecutively,i should see my end score as 11</li>
-               <li>As a user,i want the option to hold my score when i am satisfied with the points i have gained in a round of playing.The game should,therefore,add my held score to my host recent cumulative score.</li>
-               <li>As a user,i want to be inserted when the dice rolls on number 1.This will help me know that i cant roll the dice untill the alternate the player yakes their round</li>
-               <li>As a user,i need a way to know which player has won the game,which means they have scored 100 points before the alternate player</li>
+               <li>There must be players</li>
+              <li>player rolls the dice and scores points untill he/she scores one.If score is one,the dice is passed to the next player</li>
+              <li>when the score is one  he looses all the scores except the ones that he/she had hold.</li>
+              <li>when the scores on the hold exceeds or equal  to 100,the player becomes the winner</li>
+              <li>The game ends</li>
+
              </ol>
              <div class="row">
                  <div  class="col-md-6">
@@ -58,10 +58,10 @@
                  <div class="col-md-6">
                <h4>player2:</h4>
                      <input required id="name2" type="text" name="name" value="" placeholder="Enter your name.."></div></div>
-             <button id="start" type="button" class="btn btn-outline-success">START</button>
+             <button id="start" type="submit" class="btn btn-outline-success">START</button>
           </div>
           <div class="game">
-           <button id="reset" type="reset" value="reset" class="btn btn-outline-info">restart</button>
+           <button id="reset" type="button" class="btn btn-outline-info" onclick="reload()">restart</button>
 
           <div class="row">
 
@@ -110,8 +110,8 @@
 <div class="congrats">
   <h1 >BIG UP!</h1>
    <p id="winn"> </p>
-    <p id="wins"> </p>
-  <p>You are the winner</p>
+    <p id="wins"></p>
+  <p>You won the game!!</p>
    <img src="img/bg.gif"  class="img-fluid" alt="" >
 </div>
 

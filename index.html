@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/animate.css">
 <!--font awesome css-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
 
     <title>Pig Dice</title>
   </head>
@@ -55,12 +56,13 @@
                <h4 id="name1">player1:</h4>
                      <input  id="name1" type="text" name="name" value="" placeholder="Enter your name.."></div>
                  <div class="col-md-6">
-               <h4>player2</h4>
+               <h4>player2:</h4>
                      <input id="name2" type="text" name="name" value="" placeholder="Enter your name.."></div></div>
              <button id="start" type="button" class="btn btn-outline-success">START</button>
           </div>
           <div class="game">
            <button id="reset" type="reset" value="reset" class="btn btn-outline-info">restart</button>
+
           <div class="row">
 
             <div class="col-md-4" id="bod">
@@ -70,20 +72,20 @@
                 <p id="pl1"></p>
                 <p>totalSum1:-</p>
                 <p id="totalSum1"></p>
-                <p>sum1:-</p>
-                <p id="Sum1"></p>
+                <!-- <p>sum1:-</p>
+                <p id="Sum1"></p> -->
                 <p>currentScore1:-</p>
                 <p id="currentScore1"></p>
               </div>
-               <div class="col-md-4" id="bod">
-           <div id=".img"></div>
+               <div class="col-md-4" id="bodx">
+           <div ><img id="img" src="" alt="" ></div>
                    <div class="bt1">
-              <button  type="button" class="btn btn-outline-success" onclick="roll1()">roll1</button>
-                <button id="hold1" type="button" class="btn btn-outline-warning">hold1</button>
+              <button  type="button" class="btn btn-outline-success" onclick="roll1()">roll</button>
+                <button id="hold1" type="button" class="btn btn-outline-warning">hold</button>
                    </div>
                       <div class="bt2">
-              <button  type="button" class="btn btn-outline-success" onclick="roll2()">roll2</button>
-                <button id="hold2" type="button" class="btn btn-outline-warning">hold2</button>
+              <button  type="button" class="btn btn-outline-success" onclick="roll2()">roll</button>
+                <button id="hold2" type="button" class="btn btn-outline-warning">hold</button>
                    </div>
               </div>
                <div class="col-md-4" id="bos">
@@ -93,8 +95,8 @@
                    <p id="pl2"></p>
                       <p>totalSum2:-</p>
                    <p id="totalSum2"></p>
-                      <p>sum2:-</p>
-                   <p id="Sum2"></p>
+                      <!-- <p>sum2:-</p>
+                   <p id="Sum2"></p> -->
                       <p>currentScore2:-</p>
                    <p id="currentScore2"></p>
               </div>
@@ -106,7 +108,9 @@
 
 </div>
 <div class="congrats">
-  <h1>BIG UP!</h1>
+  <h1 >BIG UP!</h1>
+   <p id="winn"> </p>
+    <p id="wins"> </p>
   <p>You are the winner</p>
 </div>
 

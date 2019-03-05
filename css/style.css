@@ -19,6 +19,9 @@ nav:hover{
 #name1{
   margin-left: 50px;
 }
+.bt1,.bt2{
+  margin-top: 160px;
+}
 #bod{
     border: 2px solid black;
     border-radius: 40px;
@@ -34,6 +37,7 @@ nav:hover{
     padding: 30px;
     text-align: center;
 }
+
 .bt2{
     display: none;
 }

@@ -11,7 +11,7 @@ THis is a web app game,playing the dice and you win on having more than 100 scor
 | If you roll one to six,you can continue to roll till you get one you are jst decide to hold the score. | when you click on hold,it stores the scores made without having rolled to 1(one) | if you score one,your scores return to zero and the dice passed to the next player|
 ## Setup/Installation Requirements
 * 1.Have a functional github account
-* 2.On my github profile ,select-my-portfolio
+* 2.On my github profile ,select-pigDice
 * 3.fork the repository
 * 4.Access it on your github account
 ## Known Bugs
